@@ -25,6 +25,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https:rocreguant.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: rocreguant
 github_username:  rocreguant
+linkedin_username: rocreguant
 
 #permalink: /:title
 
