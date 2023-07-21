@@ -34,8 +34,8 @@ As a computer scientist I'm a huge nerd of the implementation because I know tha
 ## Holy Grail
 This is the most important part of all. These are the killers! If you do this you're guaranteed to get a novel price. But careful\'a0"<strong>with great power comes great responsibility</strong>". If you use these questions it is important that you nod, interrupt the speaker to rephrase what he/she said and sleep half way through the presentation (snoring will give you extra points) (this is a joke).
 - Guys, guys, guys, can we take a step back here?
-- What problem are we really trying to ** solve**?
-- >Will this scale?
+- What problem are we really trying to **solve**?
+- Will this scale?
 - Sorry, could you go back a slide?
 
 Now that you learned some basics it may be a good idea to put them in practice. Go to conferences, symposiums and don't be afraid to ask questions. The only stupid questions are the ones that remain un-asked.
