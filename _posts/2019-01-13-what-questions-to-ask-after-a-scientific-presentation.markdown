@@ -15,8 +15,8 @@ One of the easy ways to ask meaningful questions is to compare. Comparisons requ
 - The result you showed seems very promising. However, based on my textbook knowledge I would have expected the contrary. What's your explanation for that?
 
 ## Future plans
-Scientists like spending time in the future. A good question may be asking for future when you are lacking from field knowledge. If you got the basic idea it is easy to do [idea-sex](https://rocreguant.com/idea-sex-is-the-fancy-word-for-creativity/1408">idea-sex) with your knowledge. A combination with your expertise with theirs may expand the possibilities to create awesome science.
-- What are your next steps for this project?</li>
+Scientists like spending time in the future. A good question may be asking for future when you are lacking from field knowledge. If you got the basic idea it is easy to do idea-sex with your knowledge. A combination with your expertise with theirs may expand the possibilities to create awesome science.
+- What are your next steps for this project?
 - Which are the future experiments that you're planning?
 - How do you think this could be implemented to improve society?
 
@@ -32,7 +32,7 @@ As a computer scientist I'm a huge nerd of the implementation because I know tha
 - Can you elaborate more with the Z method?
 
 ## Holy Grail
-This is the most important part of all. These are the killers! If you do this you're guaranteed to get a novel price. But careful\'a0"<strong>with great power comes great responsibility</strong>". If you use these questions it is important that you nod, interrupt the speaker to rephrase what he/she said and sleep half way through the presentation (snoring will give you extra points) (this is a joke).
+This is the most important part of all. These are the killers! If you do this you're guaranteed to get a novel price. But careful! **With great power comes great responsibility**. If you use these questions it is important that you nod, interrupt the speaker to rephrase what he/she said and sleep half way through the presentation (snoring will give you extra points) (this is a joke).
 - Guys, guys, guys, can we take a step back here?
 - What problem are we really trying to **solve**?
 - Will this scale?
