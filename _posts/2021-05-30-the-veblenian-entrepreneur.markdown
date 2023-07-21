@@ -27,4 +27,4 @@ Veblenian Entrepreneurs are not only a risk to themselves, but they are also a r
 
 The solutions proposed in the paper are that <strong>institutions encourage more experienced individuals</strong> and discourage the young and inexperienced. The young are less likely to succeed leading them to take unsustained risks. Whereas the old face higher opportunity costs thus preventing unfounded pursuits. The policies should be growth-oriented and prevent the romanticized idea of entrepreneurship. Entrepreneurship has substantial costs that should be explicitly stated.
 
-Here you can find the [table in the manuscript](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3479042 where they compare the innovation driven entrepreneur vs the veblenian entrepreneur on several axis.
+Here you can find the [table in the manuscript](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3479042) where they compare the innovation driven entrepreneur vs the veblenian entrepreneur on several axis.
