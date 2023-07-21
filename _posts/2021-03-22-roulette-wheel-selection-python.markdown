@@ -26,7 +26,7 @@ An example of the genetic algorithm roulette wheel selection in python. Easy pyt
 
 If you desire to apply this genetic algorithm operation as a minimization problem all you have to do is reverse the probabilities of the function. the roulette wheel selection for the minimization problem requires updating the probabilities to 1-prob. Below the python example:
 
-<script src="https://gist.github.com/rocreguant/e9f2481f4e9842dd76e9c61f653eb7c0.js"></script>^M\
+<script src="https://gist.github.com/rocreguant/e9f2481f4e9842dd76e9c61f653eb7c0.js"></script>
 
 I hope that was clear, if not leave a comment and I'll do my best to clarify it.
 
