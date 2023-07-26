@@ -1,29 +1,0 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2709
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-
-\f0\fs24 \cf0 					<item>\
-		<title>How to add ROC AUC as a metric in Tensorflow / Keras</title>\
-		<link>https://rocreguant.com/how-to-add-roc-auc-as-a-metric-in-tensorflow-keras/1681/</link>\
-		<pubDate>Thu, 19 Mar 2020 13:20:17 +0000</pubDate>\
-		<dc:creator><![CDATA[roc]]></dc:creator>\
-		<guid isPermaLink="false">http://rocreguant.com/?p=1681</guid>\
-		<description></description>\
-		<content:encoded><![CDATA[The way to <strong>add the ROC AUC as a metric on your Tensorflow / Keras</strong> project is to copy this function that computes the ROC AUC and use the function name in the model. The function only requires a little customized tf code.\
-\
-<script src="https://gist.github.com/rocreguant/c6430501efd9c74838c51a59f81f0a96.js"></script>\
-\
-To use the function in the model. We first need to compile with the function passed directly and not a string (as it is shown in the example below).\
-\
-<script src="https://gist.github.com/rocreguant/6c76ec9e20d8f6897d5dbf4ed523e677.js"></script>\
-\
-Then we can use it in the callbacks but we need to refer to it as a string (so this time between the "" as shown in the snippet below).\
-\
-<script src="https://gist.github.com/rocreguant/7122cac139593e56d9715ea61671b9c8.js"></script>\
-\
-Other customized functions follow the same pattern.\
-\
-The function <strong>tf.keras.metrics.AUC already implements the Area Under the Curve natively in TensorFlow in the Keras module</strong>. You can <strong><a href="https://www.tensorflow.org/api_docs/python/tf/keras/metrics/AUC">check the documentation</a></strong> for further information in this regard.]]></content:encoded>}
