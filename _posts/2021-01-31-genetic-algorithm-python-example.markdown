@@ -10,7 +10,7 @@ Genetic Algorithms (GA) are a subclass of evolutionary algorithms that emulate n
 ## Genetic Algorithm Applications
 
 Genetic algorithms have been applied to many different problems in a wide spectrum of industries. This set of algorithms are widely used by computer science students to solve problems like the **travel salesman problem** (TSP) or the **knapsack problem** but it is widely used in many fields. All of the following points are also <strong>evolutionary algorithms applications</strong> since they are a bigger set of genetic algorithms.
-- In finance portfolio optimization for [real options analysis(https://www.sciencedirect.com/science/article/abs/pii/S0167923610002344) where the authors achieved significant improvements to previous algorithms.
+- In finance portfolio optimization for [real options analysis](https://www.sciencedirect.com/science/article/abs/pii/S0167923610002344) where the authors achieved significant improvements to previous algorithms.
 
 - The airlines implemented a genetic algorithm for [terminal booking](https://dl.acm.org/doi/10.1145/2345396.2345426) in order to improve the decision-making process.
 
@@ -50,7 +50,7 @@ This selection strategy is slightly longer. We randomly select a subset of solut
 
 ### 4. Mating or reproduction
 
-Two different solutions are expected to mate. For simplicity here we will assume that reproduction is done between two solutions although there seems to be [evidence(https://link.springer.com/chapter/10.1007/3-540-58484-6_252) that more progenitors increase the performance of the algorithm. The mating consists of merging the two solutions into one keeping bits of each of the parents. The mating can be done by exchanging fixed sections of the solution, but also selecting random bits of each parent. In either case, we need to make sure that the solution is still consistent. For example, if no repeats are allowed, we need to check that no repeats exist in the offspring, otherwise, that needs to be corrected so the solution satisfies the problem constraints.
+Two different solutions are expected to mate. For simplicity here we will assume that reproduction is done between two solutions although there seems to be [evidence](https://link.springer.com/chapter/10.1007/3-540-58484-6_252) that more progenitors increase the performance of the algorithm. The mating consists of merging the two solutions into one keeping bits of each of the parents. The mating can be done by exchanging fixed sections of the solution, but also selecting random bits of each parent. In either case, we need to make sure that the solution is still consistent. For example, if no repeats are allowed, we need to check that no repeats exist in the offspring, otherwise, that needs to be corrected so the solution satisfies the problem constraints.
 
 ### 5. Mutating
 
