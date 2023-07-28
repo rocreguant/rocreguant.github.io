@@ -138,4 +138,4 @@ This is a short video explanation of genetics algorithms. After the presentation
 
 
 
-Thanks for reading!\
+Thanks for reading!
