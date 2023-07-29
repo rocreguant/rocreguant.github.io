@@ -1,63 +1,0 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2709
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-
-\f0\fs24 \cf0 <item>\
-		<title>Hiding API keys in python using anaconda environment variables</title>\
-		<link>https://rocreguant.com/hiding-api-keys-in-python-using-anaconda-environment-variables/1559/</link>\
-		<pubDate>Tue, 06 Aug 2019 06:04:35 +0000</pubDate>\
-		<dc:creator><![CDATA[roc]]></dc:creator>\
-		<guid isPermaLink="false">http://rocreguant.com/?p=1559</guid>\
-		<description></description>\
-		<content:encoded><![CDATA[First you should have anaconda ;)\
-\
-Then we need to find out where the environment is located\
-\
-<code>echo $CONDA_PREFIX</code>\
-\
-We'll create create the sub-directories\
-\
-<code>cd $CONDA_PREFIX\
-mkdir -p ./etc/conda/activate.d\
-mkdir -p ./etc/conda/deactivate.d\
-touch ./etc/conda/activate.d/env_vars.sh\
-touch ./etc/conda/deactivate.d/env_vars.sh</code>\
-\
-We'll have to input the  variables in\
-\
-<code>./etc/conda/activate.d/env_vars.sh</code>\
-\
-For example here we will add a secret key and a path\
-\
-<code>#!/bin/sh\
-\
-export MY_KEY='secret-key-value'\
-export MY_FILE=/path/to/my/file/</code>\
-\
-Also important to unset the variables when we deactivate the environment we will need to edit the file\
-\
-<code>./etc/conda/deactivate.d/env_vars.sh</code>\
-\
-and we will add the following commands\
-\
-<code>\
-#!/bin/sh\
-\
-unset MY_KEY\
-unset MY_FILE</code>\
-\
-If we are inside the environment and we run python we can import the key and the path the following way\
-\
-\
-<code>import os\
-os.environ.get('MY_KEY')</code>\
-\
-and you will get -for this example- as output \
-\
-<code>'secret-key-value'</code>\
-\
-\
-This is the way to prevent committing to the repo private keys or private information}
