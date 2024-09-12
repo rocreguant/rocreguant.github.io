@@ -1,0 +1,15 @@
+---
+title: "What is NOT a competitive advantage"
+date: "2019-04-09"
+categories: 
+  - "entrepreneurship"
+  - "sin-categoria"
+---
+
+On my last post I wrote about the [real competitive advantages that your company may have](https://rocreguant.com/how-to-make-a-business-that-it-is-uncopyable/1443). There are, however, other ideas that sound like competitive advantages but they are not. **Sometimes we get obsessed into being different but being different does not make us special**. We can take steps forward into the right direction but those steps may not provide a real competitive advantage but a temporal one. Implementing a new feature is a temporal advantage. It's cool. You worked for it. No one else has it. But it is a matter of time that the other players in the market copy it and then, bluff, your advantage is gone. Users only care about the moment, if you were the first cool, but now there are another 20 more companies offering the same feature. Also, by having one thousand more features than the competition may not add any sort of advantage. **Most users stick to the basic 80% of functionality; therefore, those extra features make zero difference to them.** They don't add value, and if something subtracts desirability. It makes the tool more complicated to navigate and use. To avoid your feature to be copied you can go through the legal side and patent it. Patents are tough business that big corporations use to stab each other. Except for few cases, patents can be circumvolved.
+
+The company can claim that they are different. They have "soft skills" that gives them an edge. Better SEO and social media. This is like when it comes to driving. Every driver thinks that he or she is above average in driving skills, that is however statistically untrue. Not everyone can excel at the same and still be a differentiator. Also, from another perspective, **who tells you that Google is not going to change the algorithm and put you out of business**. Or that Facebook will stop showing your page in people's feeds?
+
+You can claim that the team is the company's asset. That you're passionate about what you're doing. Well that like saying that your children will be rich because you loved them so much. That's nice but that's not the point. If by passionate you mean hard worker, that isn't helping either. [37signals are working 30h per week](https://signalvnoise.com/posts/893-workplace-experiments). So highly productive teams with a clear goal will outcompete you. **You should work smart not hard**. And **don't compromise your health for money**. And please don't tell me about your PhD or MBA degree because what it matters are your skills not the amount of paper hanging on the walls. **[A degree per se is not telling much about the person](https://rocreguant.com/a-degree-is-not-telling-anything-about-a-person/1465)**.
+
+In conclusion, **you need to prove yourself in the arena**. Show the skills you have, be productive and work on the right milestones. Don't get distracted by side quests that add little to no value to your business. That's the path to success.

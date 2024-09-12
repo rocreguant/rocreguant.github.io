@@ -1,0 +1,14 @@
+---
+title: "Tired of self empowerment"
+date: "2020-04-25"
+categories: 
+  - "thoughts"
+---
+
+We are living in a hyperventilated society. Entrepreneurs, makers, all of us. There was a time where truly big people were defined by their achievements in life, the accumulated experiences. Now, this has changed. It does not really matter anymore. Your current projection is what matters. What are you doing? Where are you going? Don't stop! Otherwise, you're suspicious. What is that person doing standing still? It's disturbing. Suspicious. Very suspicious. No one will truly believe that you're resting, thinking, reflecting, or taking a sabbatical. You have something to hide, something is wrong. Did you get fired? Are you sick? or even worse: you don't have self-discipline. I don't care what you did or achieved in the past. In fact, no one cares. It's no longer interesting, you are no longer relevant. Can't you do anything? Are you outdated?
+
+In the past, we first went to God for answers. After, to the estate. Now we have no one. You're by yourself. Empower yourself. Do-it-yourself. Extreme ownership. You're born alone and die alone. Don't expect anything from anyone. Take care of yourself. Do you want to learn to play the guitar? There are plenty of youtube channels and websites where they teach you. Internet is the world's knowledge at your fingertips. You can learn from the best in a few clicks. If you don't speak Spanish it is because you're lazy. There are plenty of courses, apps, and different kinds of tools and methodologies available. Many of them even for free. What are you waiting for? Don't you tribute in a fiscal paradise? That's because you haven't put enough interest. It is up to you to do so.
+
+Do you have a boring life? It's your fault and only yours. You should be living at your maximum potential. Living a breathtaking life. You should transcend normality. You're unstoppable why doing normal projects? It should be wonderful, amazing! If not, you're doing something wrong. What you're building is what defines you. The world is now living in vanity. Everyone is narcissistic. Exaggerate your story. Be overly optimistic. Make up for your numbers. Wear unicorn clothes. Sell your company for millions. Was it full of false promises? It doesn't matter. Nobody creates societal value anymore. What's important is that you got rich. Fuck them.
+
+Don't you think it's tiring to save the world day after day? It's also good to slow down. Doing little. Tiding the mess. Throwing away the baggage. Observe. Think. Reflect. Give yourself time to find a new canvas. Grow as a person. Transition to a new space. To move you sometimes need to stop and check the map. If you don't stop you get lost. You get tired. Overworked. Overwhelmed. There are some people who are broken but cannot stop. Don't be like them. You won't go outdated if you stop. Don't be afraid.

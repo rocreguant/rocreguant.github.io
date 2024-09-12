@@ -1,0 +1,32 @@
+---
+title: "Roulette Wheel Selection in Python 🐍"
+date: "2021-03-22"
+categories: 
+  - "programming"
+tags: 
+  - "ga"
+  - "genetic-algorithms"
+  - "python"
+---
+
+The roulette wheel selection (also known as fitness proportionate selection) is a function used by genetic algorithms for selecting potentially useful solutions for recombination.
+
+The crossover individual probability is computed based on the individual's fitness divided by the sum of all population fitness. The following is the formula for it:
+
+[![roulette wheel chromosome probability](images/roulette_wheel_chromosome_probability.png)](https://rocreguant.com/?attachment_id=2024)
+
+where pi is the probability of each chromosome equals the chromosome frequency divided by the sum of all fitness. Let's imagine that the roulette wheel selection algorithm is like a pie chart. Each individual has a fitness value and the sum of all is the circle. So the probability of selecting a potential mate depends on your fitness with respect to the rest. The following illustration shows the probability of selecting each of them depends on how much space they take in the pie.
+
+[![Roulette wheel selection pie chart example](images/roulette_wheel_selection_example.png)](http://rocreguant.com/wp-content/uploads/2021/03/roulette_wheel_selection_example.png)
+
+## Roulette wheel selection in genetic algorithm python
+
+An example of the genetic algorithm roulette wheel selection in python. Easy python implementation without pseudo code.
+
+<script src="https://gist.github.com/rocreguant/b14ab2c2ecb58f98ee44b4d75785b8af.js"></script>
+
+If you desire to apply this genetic algorithm operation as a minimization problem all you have to do is reverse the probabilities of the function. the roulette wheel selection for the minimization problem requires updating the probabilities to 1-prob. Below the python example:
+
+<script src="https://gist.github.com/rocreguant/e9f2481f4e9842dd76e9c61f653eb7c0.js"></script>
+
+I hope that was clear, if not leave a comment and I'll do my best to clarify it.
