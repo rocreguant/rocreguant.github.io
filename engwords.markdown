@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Words
-permalink: /English words/
+permalink: /english_words/
 #permalink: /
 #redirect_from:
 #  - /eng_words
@@ -12,5 +12,4 @@ permalink: /English words/
 	- extremely unwell. (_"she had sobered up but she felt ghastly"_)
 <br/>
 
-- **cajole**: persuade (someone) to do something by sustained coaxing or flattery. (_"he hoped to cajole her into selling the house"-)
-
+- **cajole**: persuade (someone) to do something by sustained coaxing or flattery. (_"he hoped to cajole her into selling the house"_)
