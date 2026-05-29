@@ -13,8 +13,8 @@ sidebar:
   avatar: roc.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
-  email: example@email.com
-  phone: 012 345 6789
+  #email: example@email.com
+  #phone: 012 345 6789
   timezone: Central European # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
   citizenship:
   website: https://rocreguant.com/ # Include the full website URL, including "http://" or "https://".
@@ -52,7 +52,7 @@ sidebar:
     - idiom: French
       level: Conversational
 
-#  interests:
+  interests:
 #    title: Interests
 #    info:
 #    - item: Climbing
@@ -132,7 +132,7 @@ experiences:
         - Optimized patient clustering models for Multiple Sclerosis (MS) based on longitudinal treatment history to improve understanding of disease progression.
         - Engineered a high-performance patient similarity scoring algorithm capable of processing and analyzing records for millions of individuals in a production environment.
 
-#certifications:
+certifications:
 #  title: Certifications
 #  list:
 #  - name: CV Builder
@@ -146,7 +146,7 @@ experiences:
 #      Details about cert. Lorem ipsum dolor sit amet, consectetur
 
 
-#projects:
+projects:
 #  title: Projects
 #  intro: >
 #    You can list your side projects in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
@@ -160,7 +160,7 @@ experiences:
 #    tagline: "A responsive website template designed to help web developers/designers market their services."
 
 
-#oss:
+oss:
 #  title: OSS Contributions
 #  intro: >
 #    You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
@@ -196,7 +196,7 @@ publications:
     authors: <b>Reguant, R.<b>, Brunak, S., & Saha, S.
     conference: Scientific Reports, 2021
 
-#recommendations:
+recommendations:
 #  title: Recommendations
 #  list:
 #  - person: Yareli Perez
@@ -213,7 +213,7 @@ publications:
 #      I would like to work with Alan Doe again!
 
 
-#skills:
+skills:
 #  title: Skills &amp; Proficiency
 #
 #  toolset:
@@ -224,5 +224,5 @@ publications:
 #    level: 98%
 
 
-#footer: >
+footer: >
 #  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
