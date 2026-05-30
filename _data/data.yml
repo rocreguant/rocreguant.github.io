@@ -68,16 +68,16 @@ career-profile:
 education:
   title: Education
   info:
+  - degree: MBA Executive – Innovation and entrepreneurship 
+    university: Open University of Catalonia
+    time:
+    details: |
+      Thesis: Commercialization Strategy and Business Model Innovation for an IoT-Enabled Energy Optimization Platform
   - degree: PhD on Bioinformatics and Biostatistics 
     university: University of Copenhagen
     time: 
     details: |
       Thesis: Modeling temporality and patient relationships in healthcare data
-  - degree: MBA Executive – Innovation and entrepreneurship 
-    university: Universitat Oberta de Catalunya
-    time:
-    details: |
-      Thesis: Commercialization Strategy and Business Model Innovation for an IoT-Enabled Energy Optimization Platform
   - degree: Master’s degree in Computer Science Engineering 
     university: Technical University of Munich
     time:
