@@ -93,43 +93,46 @@ education:
 experiences:
   title: Experiences
   info:
-  - role: Lead Developer
-    time: 2015 - Present
-    company: Startup Hubs, San Francisco
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-      enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-      error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-      architecto beatae vitae dicta sunt explicabo.
-        - Bullet point
-        - Bullet point
-  - role: Senior Software Engineer
-    time: 2014 - 2015
-    company: Google, London
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - role: UI Developer
-    time: 2012 - 2014
-    company: Amazon, London
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
+    - role: Senior Real-World Data Scientist in Global Analytics Team
+      time: 2024 - Present
+      company: AstraZeneca, Barcelona, Spain
+      details: |
+        - Lead the conceptualization and design of research analytical projects in close collaboration with Medical, Market Access, and HEOR to understand the disease and patient journey, prepare product launches, and maximize the value of the products on the market.
+        - Manage external vendor/CRO partnerships and project timelines to ensure high-quality deliveries.
+        - Analysis of healthcare data, claims and EHR, to identify treatment patterns and clinical benefits across therapies.
+        - Reanalyze clinical trial datasets to investigate quality of life fluctuations, and subgroup analysis for several HTAs.
+        - Identification of underdiagnosed patient populations and quantifying market opportunities.
+        - Develop patient stratification models based on preceding comorbidities and longitudinal disease patterns to improve clinical phenotype prediction and population segmentation.
+    - role: Machine Learning Solutions Architect
+      time: 2022 - 2024
+      company: CSIRO, Sydney, Australia
+      details: |
+        - Directed technical team members and led the end-to-end development of proteomics analysis platforms, focusing on automated feature extraction and synergy detection to advance precision medicine initiatives.
+        - Architected VariantSpark, a cloud-based distributed ML tool for analyzing complex epistatic interactions; successfully developed polygenic risk scores for Cardiovascular (CV) risk, translating genomic complexity into actionable clinical predictors.
+        - Lead a multi-modal data generation project to create high-fidelity synthetic datasets encompassing genetics, biochemistry, imaging (2D/3D), and clinical text.
+        - Got granted a patent and lead the commercialization strategy for federated data generation.
+    - role: R&D Scientist in Real-World Data
+      time: 2018 - 2021
+      company: Novo Nordisk Foundation Center for Protein Research, Copenhagen, Denmark
+      details: |
+        - Led the developed of Deep Learning (CNN) models for the automated grading of diabetic retinopathy, significantly improving lesion identification in large-scale biomedical imaging datasets.
+        - Performed longitudinal patient journey mapping using large-scale EHR/EMR registries to stratify populations and differentiate complex disease states like Alzheimer’s vs. vascular dementia.
+        - Executed advanced time-to-event mortality analyses across Danish national databases, identifying causal drivers.
+        - Authored technical reports and collaborated on research initiatives that translated complex temporal data into actionable clinical insights.
+    - role: Research fellow 
+      time: 2016 - 2017
+      company: Dana-Farber Cancer Institute, Boston, USA
+      details: |
+        - Developed a tool to analyze protein sequences to devise critical amino acid pairs correlations within the same protein family. Those pairs were regarded as critically relevant for the protein structure and function and thus a key element to identify homologs. 
+        - JavaScript implementation of a webpage for protein alignment visualization (alignmentviewer.org).
+    - role: Data Mining and Machine Learning Engineer 
+      time: 2016 - 2016
+      company: Arvato healthcare services, Munich, Germany
+      details: |
+        - Provided comprehensive analysis for pharmaceutical and insurance clients utilizing PostgreSQL, Python, and R.
+        - Optimized patient clustering models for Multiple Sclerosis (MS) based on longitudinal treatment history to improve understanding of disease progression.
+        - Engineered a high-performance patient similarity scoring algorithm capable of processing and analyzing records for millions of individuals in a production environment.
+
 
 certifications:
   title: Certifications
