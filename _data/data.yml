@@ -34,31 +34,30 @@ sidebar:
   leetcode: # Please provide your LeetCode username.
   pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
 
+
   languages:
     title: Languages
     info:
     - idiom: English
-      level: Native
-
-    - idiom: French
       level: Professional
 
     - idiom: Spanish
-      level: Professional
+      level: Native
+
+    - idiom: Catalan
+      level: Native
+
+    - idiom: German
+      level: Conversational
+
+    - idiom: French
+      level: Conversational
 
   interests:
-    title: Interests
-    info:
-    - item: Climbing
-      link:
-
-
-    - item: Snowboarding
-      link:
-
-
-    - item: Cooking
-      link:
+#    title: Interests
+#    info:
+#    - item: Climbing
+#      link:
 
 
 career-profile:
