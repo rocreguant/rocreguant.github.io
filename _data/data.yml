@@ -63,37 +63,32 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    Summarise your career here lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit. You can [download this free resume/CV template here]().
-    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    Donec quam felis, ultricies nec, pellentesque eu.
-    Second paragraph if required.
+    Accomplished analytics leader with 9+ years of experience in pharmaceutical and biotechnology sectors with proven track record in leading complex analytical teams and projects, integrating AI, and delivering high-impact evidence to cross-functional stakeholders. Architect of the analytics portfolio for metabolic and neurology therapeutic areas through the integrated evidence generation plans, study inception and design, and global support to the local teams for regulatory and reimbursement submissions. Committed to fostering a culture of continuous innovation and excellence to transform the healthcare landscape and improve patient lives globally.
+
 education:
   title: Education
   info:
-  - degree: MSc in Computer Science
-    university: University of London
-    time: 2011 - 2012
+  - degree: PhD on Bioinformatics and Biostatistics 
+    university: University of Copenhagen
+    time: 
     details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - degree: BSc in Applied Mathematics
-    university: Bristol University
-    time: 2007 - 2011
+      Thesis: Modeling temporality and patient relationships in healthcare data
+  - degree: MBA Executive – Innovation and entrepreneurship 
+    university: Universitat Oberta de Catalunya
+    time:
     details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
+      Thesis: Commercialization Strategy and Business Model Innovation for an IoT-Enabled Energy Optimization Platform
+  - degree: Master’s degree in Computer Science Engineering 
+    university: Technical University of Munich
+    time:
+    details: |
+      Thesis: Improving protein family classification using evolutionary couplings
+  - degree: Computer Science Engineering degree  
+    university: Polytechnic University of Catalonia
+    time:
+    details: |
+      Thesis: Using Semantic Web Concepts to Achieve Traceability in Cross-disciplinary Development Projects
+
 
 experiences:
   title: Experiences
