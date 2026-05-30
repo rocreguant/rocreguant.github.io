@@ -171,27 +171,33 @@ oss:
 #    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
 
 
+
 publications:
   title: Publications
   intro: |
-    You can list your publications in this section. Lorem ipsum dolor sit
-    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-    bibendum fringilla a eu lectus.
+    This is a selection of my publications, for a more detailed list you can visit <a href="https://scholar.google.es/citations?hl=en&user=9PL0JWgAAAAJ">my google scholar profile</a>.
+
   papers:
-  - title: The Art of Computer Programming
-    link: "#"
-    authors: Donald E. Knuth
-    conference: Addison-Wesley, 1968
+  - title: Optimizing UK biobank cloud-based research analysis platform to fine-map coronary artery disease loci in whole genome sequencing data.
+    link: 
+    authors: Sng, L. M., Kaphle, A., O’Brien, M. J., Hosking, B., <b>Reguant, R.<b>, Verjans, J., ... & Bauer, D. C.
+    conference: Scientific reports, 2025
 
-  - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-    link: "#"
-    authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-    conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+  - title: Disease trajectory browser for exploring temporal, population-wide disease progression patterns in 7.2 million Danish patients
+    link: 
+    authors: Siggaard, T., <b>Reguant, R.<b>, Jørgensen, I. F., Haue, A. D., Lademann, M., Aguayo-Orozco, A., ... & Brunak, S.
+    conference: Nature communications, 2020
 
-  - title: A syntax directed compiler for Algol 60
-    link: "#"
-    authors: Edgar T. Irons
-    conference: "Comm. ACM 4 (1961), 51–55"
+  - title: Privacy-hardened and hallucination-resistant synthetic data generation with logic-solvers
+    link: 
+    authors: Burgess, M. A., Hosking, B., <b>Reguant, R.<b>, Kaphle, A., O’Brien, M. J., Sng, L. M., ... & Bauer, D. C.
+    conference: Bioinformatics, 2025
+
+  - title: Understanding inherent image features in CNN-based assessment of diabetic retinopathy
+    link: 
+    authors: <b>Reguant, R.<b>, Brunak, S., & Saha, S.
+    conference: Scientific Reports, 2021
+
 
 recommendations:
   title: Recommendations
