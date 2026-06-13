@@ -3,8 +3,8 @@
 # Site Settings
 title: Roc Reguant
 url: 'http://rocreguant.github.io'
-recepies_page_heading: "Recipes"
-recepies_page_subtitle: "A collection of recipes"
+recipes_page_heading: "Recipes"
+recipes_page_subtitle: "A collection of recipes"
 
 #change it according to your repository name
 # disabling since we are using a custom domain
@@ -12,14 +12,14 @@ recepies_page_subtitle: "A collection of recipes"
 
 description: A beautiful Jekyll theme for creating resume
 blog_paginate: 3
-recepies_paginate: 3
+recipes_paginate: 3
 collections:
   blog:
     output: true
     permalink: /blog/:year/:month/:day/:title/
-  recepies:
+  recipes:
     output: true
-    permalink: /recepies/:title/
+    permalink: /recipes/:title/
 defaults:
   - scope:
       path: ""
@@ -28,9 +28,9 @@ defaults:
       layout: clean-blog-post
   - scope:
       path: ""
-      type: recepies
+      type: recipes
     values:
-      layout: mediumish-recepie
+      layout: mediumish-recipe
 # Style will be applied only after restarting the build or serve. Just choose one of the options.
 theme_skin: blue # blue turquoise green berry orange ceramic teal oceanstale
 chrome_mobile_color: #use hex colors (ex:#1976d2) or leave empty if you don't want a color for chrome mobile searchbar
