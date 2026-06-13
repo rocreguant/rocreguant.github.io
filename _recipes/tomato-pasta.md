@@ -1,7 +1,7 @@
 ---
 title: Tomato pasta
 description: Fast pasta with tomato sauce and basil
-author: Roc
+author: XXX
 date: 2026-03-13 10:00:00 +0000
 image: https://picsum.photos/900/500?random=601
 ---
