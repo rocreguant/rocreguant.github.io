@@ -23,7 +23,7 @@ date: 2026-06-13 12:00:00 +0000
 1 culleradeta i quart de sal
 Un polsim de caiena (opcional)
 
-##Elaboració
+## Elaboració
 Picar la ceba i el pebrot a daus petits, i l'all ben fi. Escalfar l'oli dins una cassola gran i sofregir la ceba, el pebrot i l'all durant un minut.
 
 Afegir la vedella picada i coure-la tot remenant i desfent els grumolls fins que perdi el color cru.
