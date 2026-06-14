@@ -4,19 +4,19 @@
 title: Roc Reguant
 url: 'http://rocreguant.github.io'
 recipes_page_heading: "Recipes"
-recipes_page_subtitle: "A collection of recipes"
+recipes_page_subtitle: "Les meves receptes d'estar per casa"
 
 #change it according to your repository name
 # disabling since we are using a custom domain
 #baseurl: '/online-cv' 
 
-description: A beautiful Jekyll theme for creating resume
-blog_paginate: 3
-recipes_paginate: 3
+description: Showing my personal website and blog. I am a software engineer, and I like to cook and share my recipes.
+blog_paginate: 9
+recipes_paginate: 9
 collections:
   blog:
     output: true
-    permalink: /blog/:year/:month/:day/:title/
+    permalink: /blog/:title/
   recipes:
     output: true
     permalink: /recipes/:title/
