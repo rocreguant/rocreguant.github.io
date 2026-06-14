@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "End of year review and new year's resolutions for 2025"
 date: 2024-12-31 
 categories: random
