@@ -81,15 +81,19 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      const perPage = 9;
-      const items = Array.from(document.querySelectorAll('.js-story-card'));
+      const perPage = 9; 
+      // This handles selectors for both your blog or recipe templates smoothly
+      const items = Array.from(document.querySelectorAll('.js-post-wrapper, .js-story-card')); 
       const totalPages = Math.ceil(items.length / perPage);
       
-      if (totalPages <= 1) return; // No pagination needed if 9 or fewer posts
+      if (totalPages <= 1) {
+        items.forEach(item => item.style.display = 'block');
+        return; 
+      }
       
       document.getElementById('js-pagination-wrapper').style.display = 'block';
       
-      // Read current page from URL hash (e.g., #page=2), default to 1
+      // Reads page from URL hash, defaults to 1
       function getPageFromHash() {
         const match = window.location.hash.match(/page=(\d+)/);
         return match ? parseInt(match[1]) : 1;
@@ -99,24 +103,44 @@
         if (page < 1) page = 1;
         if (page > totalPages) page = totalPages;
         
-        // Save back to URL hash so page refreshes/back buttons behave nicely
-        window.location.hash = `page=${page}`;
+        // SMART HASH CONTROL: Clean the URL on page 1, show hash on others
+        if (page === 1) {
+          // Removes the #page=1 without forcing a page reload
+          history.replaceState(null, null, window.location.pathname + window.location.search);
+        } else {
+          window.location.hash = `page=${page}`;
+        }
         
-        // Show/Hide items
+        // Loop through all items and display only the sliced chunk
+        let visibleItems = [];
         items.forEach((item, index) => {
           const start = (page - 1) * perPage;
           const end = start + perPage;
-          item.style.display = (index >= start && index < end) ? 'block' : 'none';
+          if (index >= start && index < end) {
+            item.style.display = 'block';
+            visibleItems.push(item);
+          } else {
+            item.style.display = 'none';
+          }
+          
+          // Handle template line breaks safely if they exist
+          const hr = item.querySelector('.js-post-hr');
+          if (hr) hr.style.display = 'block';
         });
         
-        // Setup Prev/Next buttons
+        if (visibleItems.length > 0) {
+          const lastVisibleHr = visibleItems[visibleItems.length - 1].querySelector('.js-post-hr');
+          if (lastVisibleHr) lastVisibleHr.style.display = 'none';
+        }
+        
+        // Handle newer/older button structural states
         const prevBtn = document.getElementById('js-prev-btn');
         const nextBtn = document.getElementById('js-next-btn');
         
         if (page === 1) prevBtn.classList.add('disabled'); else prevBtn.classList.remove('disabled');
         if (page === totalPages) nextBtn.classList.add('disabled'); else nextBtn.classList.remove('disabled');
         
-        // Build numeric pagination dynamically (1, 2, 3, 4 ... Last Page)
+        // Render 1, 2, 3, 4 ... Last Page sequence
         const numericWrap = document.getElementById('js-numeric-pages');
         numericWrap.innerHTML = '';
         
@@ -124,20 +148,20 @@
         for (let i = 1; i <= totalPages; i++) {
           if (i <= 4 || i === totalPages) {
             const li = document.createElement('li');
-            if (i === page) li.className = 'active';
-            li.innerHTML = `<a class="js-page-btn" data-page="${i}" href="#page=${i}">${i}</a>`;
+            li.className = `page-item ${i === page ? 'active' : ''}`;
+            li.innerHTML = `<a class="page-link js-page-btn" data-page="${i}" href="#page=${i}">${i}</a>`;
             numericWrap.appendChild(li);
           } else if (!ellipsisShown) {
             const li = document.createElement('li');
-            li.className = 'disabled';
-            li.innerHTML = '<span>&hellip;</span>';
+            li.className = 'page-item disabled';
+            li.innerHTML = '<span class="page-link">&hellip;</span>';
             numericWrap.appendChild(li);
             ellipsisShown = true;
           }
         }
       }
       
-      // Click listeners for numbers, newer, and older buttons
+      // Global click interceptions
       document.addEventListener('click', function(e) {
         if (e.target.classList.contains('js-page-btn')) {
           e.preventDefault();
@@ -156,8 +180,13 @@
         }
       });
       
-      // Initialize layout
+      // Check the hash value immediately on load so direct links like #page=3 work
       showPage(getPageFromHash());
+      
+      // Listen for browser back/forward buttons so pagination updates automatically
+      window.addEventListener('hashchange', function() {
+        showPage(getPageFromHash());
+      });
     });
   </script>
 </body>
