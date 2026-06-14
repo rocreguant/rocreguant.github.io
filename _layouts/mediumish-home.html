@@ -8,14 +8,20 @@
   <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/plugins/font-awesome/css/all.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/recipes-theme.css">
+  <style>
+    /* Quick styling to make our javascript pagination look great */
+    .page-numbers li { display: inline-block; margin: 0 4px; }
+    .page-numbers li.active a { font-weight: bold; text-decoration: underline; pointer-events: none; }
+    .page-numbers li.disabled { opacity: 0.5; pointer-events: none; }
+    .pager-btn.disabled { opacity: 0.5; pointer-events: none; cursor: not-allowed; }
+  </style>
 </head>
 <body class="mediumish-body">
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
+        Menu <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
@@ -37,15 +43,9 @@
     
     <section class="stories-grid">
       {% assign recipes_posts = site.recipes | sort: "date" | reverse %}
-      {% assign current_page = page.page_number | default: 1 | plus: 0 %}
-      {% assign per_page = site.recipes_paginate | default: 9 | plus: 0 %}
-      {% assign total_posts = recipes_posts.size | plus: 0.0 %}
-      {% assign total_pages = total_posts | divided_by: per_page | ceil %}
-      {% assign offset = current_page | minus: 1 | times: per_page %}
-      {% assign paged_posts = recipes_posts | slice: offset, per_page %}
       
-      {% for post in paged_posts %}
-      <article class="story-card">
+      {% for post in recipes_posts %}
+      <article class="story-card js-story-card" style="display: none;">
         <a href="{{ post.url | relative_url }}" class="story-image-wrap">
           <img src="{{ post.image | default: 'https://picsum.photos/900/500?random=500' }}" alt="{{ post.title }}">
         </a>
@@ -67,58 +67,98 @@
       {% endfor %}
     </section>
 
-    {% if total_pages > 1 %}
-    <div class="pager-wrap">
-      {% if current_page > 1 %}
-        {% assign newer_page = current_page | minus: 1 %}
-        {% if newer_page == 1 %}
-          {% assign newer_url = '/recipes/' %}
-        {% else %}
-          {% capture newer_url %}/recipes/page/{{ newer_page }}/{% endcapture %}
-        {% endif %}
-        <a class="pager-btn" href="{{ newer_url | relative_url }}">&larr; Newer</a>
-      {% else %}
-        <span></span>
-      {% endif %}
-      
-      {% if current_page < total_pages %}
-        {% assign older_page = current_page | plus: 1 %}
-        {% capture older_url %}/recipes/page/{{ older_page }}/{% endcapture %}
-        <a class="pager-btn" href="{{ older_url | relative_url }}">Older &rarr;</a>
-      {% endif %}
+    <div id="js-pagination-wrapper" style="display: none;">
+      <div class="pager-wrap">
+        <a class="pager-btn" id="js-prev-btn" href="#">&larr; Newer</a>
+        <a class="pager-btn" id="js-next-btn" href="#">Older &rarr;</a>
+      </div>
+
+      <ul class="page-numbers" id="js-numeric-pages">
+        </ul>
     </div>
-
-    <ul class="page-numbers">
-      {% assign ellipsis_shown = false %}
-      {% for page_index in (1..total_pages) %}
-        
-        {% comment %} 
-          Show if it's pages 1, 2, 3, 4 OR if it's the absolute last page
-        {% endcomment %}
-        {% if page_index <= 4 or page_index == total_pages %}
-          
-          {% if page_index == 1 %}
-            {% assign page_url = '/recipes/' %}
-          {% else %}
-            {% capture page_url %}/recipes/page/{{ page_index }}/{% endcapture %}
-          {% endif %}
-          
-          <li class="{% if page_index == current_page %}active{% endif %}">
-            <a href="{{ page_url | relative_url }}">{{ page_index }}</a>
-          </li>
-          
-        {% comment %} 
-          If it's page 5 or higher, and not the last page, render an ellipsis ONCE
-        {% endcomment %}
-        {% elsif ellipsis_shown == false %}
-          <li class="disabled"><span>&hellip;</span></li>
-          {% assign ellipsis_shown = true %}
-        {% endif %}
-
-      {% endfor %}
-    </ul>
-    {% endif %}
     
   </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const perPage = 9;
+      const items = Array.from(document.querySelectorAll('.js-story-card'));
+      const totalPages = Math.ceil(items.length / perPage);
+      
+      if (totalPages <= 1) return; // No pagination needed if 9 or fewer posts
+      
+      document.getElementById('js-pagination-wrapper').style.display = 'block';
+      
+      // Read current page from URL hash (e.g., #page=2), default to 1
+      function getPageFromHash() {
+        const match = window.location.hash.match(/page=(\d+)/);
+        return match ? parseInt(match[1]) : 1;
+      }
+      
+      function showPage(page) {
+        if (page < 1) page = 1;
+        if (page > totalPages) page = totalPages;
+        
+        // Save back to URL hash so page refreshes/back buttons behave nicely
+        window.location.hash = `page=${page}`;
+        
+        // Show/Hide items
+        items.forEach((item, index) => {
+          const start = (page - 1) * perPage;
+          const end = start + perPage;
+          item.style.display = (index >= start && index < end) ? 'block' : 'none';
+        });
+        
+        // Setup Prev/Next buttons
+        const prevBtn = document.getElementById('js-prev-btn');
+        const nextBtn = document.getElementById('js-next-btn');
+        
+        if (page === 1) prevBtn.classList.add('disabled'); else prevBtn.classList.remove('disabled');
+        if (page === totalPages) nextBtn.classList.add('disabled'); else nextBtn.classList.remove('disabled');
+        
+        // Build numeric pagination dynamically (1, 2, 3, 4 ... Last Page)
+        const numericWrap = document.getElementById('js-numeric-pages');
+        numericWrap.innerHTML = '';
+        
+        let ellipsisShown = false;
+        for (let i = 1; i <= totalPages; i++) {
+          if (i <= 4 || i === totalPages) {
+            const li = document.createElement('li');
+            if (i === page) li.className = 'active';
+            li.innerHTML = `<a class="js-page-btn" data-page="${i}" href="#page=${i}">${i}</a>`;
+            numericWrap.appendChild(li);
+          } else if (!ellipsisShown) {
+            const li = document.createElement('li');
+            li.className = 'disabled';
+            li.innerHTML = '<span>&hellip;</span>';
+            numericWrap.appendChild(li);
+            ellipsisShown = true;
+          }
+        }
+      }
+      
+      // Click listeners for numbers, newer, and older buttons
+      document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('js-page-btn')) {
+          e.preventDefault();
+          showPage(parseInt(e.target.getAttribute('data-page')));
+          window.scrollTo(0, 0);
+        }
+        if (e.target.id === 'js-prev-btn' && !e.target.classList.contains('disabled')) {
+          e.preventDefault();
+          showPage(getPageFromHash() - 1);
+          window.scrollTo(0, 0);
+        }
+        if (e.target.id === 'js-next-btn' && !e.target.classList.contains('disabled')) {
+          e.preventDefault();
+          showPage(getPageFromHash() + 1);
+          window.scrollTo(0, 0);
+        }
+      });
+      
+      // Initialize layout
+      showPage(getPageFromHash());
+    });
+  </script>
 </body>
 </html>
