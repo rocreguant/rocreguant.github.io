@@ -91,4 +91,107 @@
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://startbootstrap.github.io/startbootstrap-clean-blog-jekyll/assets/vendor/startbootstrap-clean-blog/js/scripts.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const perPage = 9; // Change this number to show more or less items per page
+      const items = Array.from(document.querySelectorAll('.js-post-wrapper'));
+      const totalPages = Math.ceil(items.length / perPage);
+      
+      if (totalPages <= 1) {
+        // If there are 9 or fewer posts, just show them all and hide the pagination
+        items.forEach(item => item.style.display = 'block');
+        const lastHr = document.querySelector('#js-posts-container .js-post-wrapper:last-child .js-post-hr');
+        if (lastHr) lastHr.style.display = 'none';
+        return; 
+      }
+      
+      document.getElementById('js-pagination-wrapper').style.display = 'block';
+      
+      function getPageFromHash() {
+        const match = window.location.hash.match(/page=(\d+)/);
+        return match ? parseInt(match[1]) : 1;
+      }
+      
+      function showPage(page) {
+        if (page < 1) page = 1;
+        if (page > totalPages) page = totalPages;
+        
+        window.location.hash = `page=${page}`;
+        
+        // Loop through all items and display only the sliced chunk
+        let visibleItems = [];
+        items.forEach((item, index) => {
+          const start = (page - 1) * perPage;
+          const end = start + perPage;
+          if (index >= start && index < end) {
+            item.style.display = 'block';
+            visibleItems.push(item);
+          } else {
+            item.style.display = 'none';
+          }
+          // Reset all lines first
+          const hr = item.querySelector('.js-post-hr');
+          if (hr) hr.style.display = 'block';
+        });
+        
+        // Hide the trailing divider on the last visible entry on the page
+        if (visibleItems.length > 0) {
+          const lastVisibleHr = visibleItems[visibleItems.length - 1].querySelector('.js-post-hr');
+          if (lastVisibleHr) lastVisibleHr.style.display = 'none';
+        }
+        
+        // Handle newer/older button structural states
+        const prevBtn = document.getElementById('js-prev-btn');
+        const nextBtn = document.getElementById('js-next-btn');
+        
+        if (page === 1) prevBtn.classList.add('disabled'); else prevBtn.classList.remove('disabled');
+        if (page === totalPages) nextBtn.classList.add('disabled'); else nextBtn.classList.remove('disabled');
+        
+        // Render 1, 2, 3, 4 ... Last Page sequence
+        const numericWrap = document.getElementById('js-numeric-pages');
+        numericWrap.innerHTML = '';
+        
+        let ellipsisShown = false;
+        for (let i = 1; i <= totalPages; i++) {
+          if (i <= 4 || i === totalPages) {
+            const li = document.createElement('li');
+            li.className = `page-item ${i === page ? 'active' : ''}`;
+            li.innerHTML = `<a class="page-link js-page-btn" data-page="${i}" href="#page=${i}">${i}</a>`;
+            numericWrap.appendChild(li);
+          } else if (!ellipsisShown) {
+            const li = document.createElement('li');
+            li.className = 'page-item disabled';
+            li.innerHTML = '<span class="page-link">&hellip;</span>';
+            numericWrap.appendChild(li);
+            ellipsisShown = true;
+          }
+        }
+      }
+      
+      // Global click interceptions
+      document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('js-page-btn')) {
+          e.preventDefault();
+          showPage(parseInt(e.target.getAttribute('data-page')));
+          window.scrollTo(0, 0);
+        }
+        if (e.target.id === 'js-prev-btn' && !e.target.classList.contains('disabled')) {
+          e.preventDefault();
+          showPage(getPageFromHash() - 1);
+          window.scrollTo(0, 0);
+        }
+        if (e.target.id === 'js-next-btn' && !e.target.classList.contains('disabled')) {
+          e.preventDefault();
+          showPage(getPageFromHash() + 1);
+          window.scrollTo(0, 0);
+        }
+      });
+      
+      showPage(getPageFromHash());
+    });
+  </script>
+</body>
+</html>
