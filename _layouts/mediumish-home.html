@@ -52,10 +52,10 @@
         </div>
         <div class="story-meta">
           <div class="author-avatar">
-            <img src="https://ui-avatars.com/api/?name={{ post.author | default: 'Chef' | url_encode }}&background=f1f3f5&color=222222&size=64" alt="{{ post.author | default: 'Chef' }}">
+            <img src="https://ui-avatars.com/api/?name={{ post.author | default: 'Chef' | url_encode }}&background=f1f3f5&color=222222&size=64" alt="{{ post.author | default: 'Roc' }}">
           </div>
           <div class="author-info">
-            <span>{{ post.author | default: "Chef" }}</span>
+            <span>{{ post.author | default: "Roc" }}</span>
             <small>{{ post.date | date: "%-d %b %Y" }}</small>
           </div>
           <a href="{{ post.url | relative_url }}" class="bookmark-link"><i class="far fa-bookmark"></i></a>
