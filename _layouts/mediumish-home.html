@@ -89,15 +89,32 @@
     </div>
 
     <ul class="page-numbers">
+      {% assign ellipsis_shown = false %}
       {% for page_index in (1..total_pages) %}
-        {% if page_index == 1 %}
-          {% assign page_url = '/recipes/' %}
-        {% else %}
-          {% capture page_url %}/recipes/page/{{ page_index }}/{% endcapture %}
+        
+        {% comment %} 
+          Show if it's pages 1, 2, 3, 4 OR if it's the absolute last page
+        {% endcomment %}
+        {% if page_index <= 4 or page_index == total_pages %}
+          
+          {% if page_index == 1 %}
+            {% assign page_url = '/recipes/' %}
+          {% else %}
+            {% capture page_url %}/recipes/page/{{ page_index }}/{% endcapture %}
+          {% endif %}
+          
+          <li class="{% if page_index == current_page %}active{% endif %}">
+            <a href="{{ page_url | relative_url }}">{{ page_index }}</a>
+          </li>
+          
+        {% comment %} 
+          If it's page 5 or higher, and not the last page, render an ellipsis ONCE
+        {% endcomment %}
+        {% elsif ellipsis_shown == false %}
+          <li class="disabled"><span>&hellip;</span></li>
+          {% assign ellipsis_shown = true %}
         {% endif %}
-        <li class="{% if page_index == current_page %}active{% endif %}">
-          <a href="{{ page_url | relative_url }}">{{ page_index }}</a>
-        </li>
+
       {% endfor %}
     </ul>
     {% endif %}
