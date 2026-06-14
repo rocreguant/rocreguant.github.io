@@ -2,7 +2,7 @@
 title: Arròs amb vedella i verdures
 description: Plat únic d'arròs amb carn picada i verdures #rapid #onepot
 author: Roc
-date: 2026-06-13 12:00:00 +0000
+date: 2026-06-13
 ---
 ## Ingredients
 500g de vedella picada
