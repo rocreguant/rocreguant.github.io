@@ -37,8 +37,9 @@
     <section class="stories-grid">
       {% assign recipes_posts = site.recipes | sort: "date" | reverse %}
       {% assign current_page = page.page_number | default: 1 | plus: 0 %}
-      {% assign per_page = site.recipes_paginate | default: 3 | plus: 0 %}
-      {% assign total_pages = page.total_pages | default: 1 | plus: 0 %}
+      {% assign per_page = site.recipes_paginate | default: 9 | plus: 0 %}
+      {% assign total_posts = recipes_posts.size | plus: 0.0 %}
+      {% assign total_pages = total_posts | divided_by: per_page | ceil %}
       {% assign offset = current_page | minus: 1 | times: per_page %}
       {% assign paged_posts = recipes_posts | slice: offset, per_page %}
       {% for post in paged_posts %}
