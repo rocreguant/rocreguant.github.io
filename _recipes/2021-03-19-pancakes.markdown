@@ -1,0 +1,19 @@
+---
+title: "Pancakes"
+date: 2021-03-19
+categories: 
+  - "general"
+---
+
+## Ingredientes
+
+- 1.5 vasos de harina
+- 3.5 cucharadillas de baking powder
+- 1 cucharada de azucar
+- 1.25 vasos de leche
+- 1 huevo
+- 3 cucharades de mantequilla
+
+## Preparación
+
+Mezclar primero la harina, el baking powder, y el azucar. Luego añadir la manteca derretida, la leche y el huevo. Cuando quede homogeneo, poner una sarten al fuego y hacer pancakes a 1/4 de vaso a la vez. Servir en caliente
