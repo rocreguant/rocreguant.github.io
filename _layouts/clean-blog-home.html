@@ -62,7 +62,7 @@
             <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
             {% endif %}
           </a>
-          <p class="post-meta">Posted by {{ post.author | default: site.author | default: "Author" }} on {{ post.date | date: '%B %d, %Y' }}</p>
+          <p class="post-meta">Posted by {{ post.author | default: site.author | default: "Roc Reguant" }} on {{ post.date | date: '%B %d, %Y' }}</p>
         </article>
         {% unless forloop.last %}
         <hr>
