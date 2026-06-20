@@ -5,23 +5,23 @@ author: Roc
 date: 2026-06-13
 ---
 ## Ingredients
-500g de vedella picada
-225g d'arròs blanc de gra llarg
-1 ceba
-1 pebrot vermell
-2 grans d'all
-2 cullerades d'oli d'oliva
-2 cullerades i mitja de tomàquet concentrat
-500ml de brou de vedella
-300g de verdures congelades (pèsols, pastanaga i blat de moro)
-90g d'espinacs tendres
-1 fulla de llorer
-1 culleradeta d'orenga seca
-1 culleradeta de ceba en pols
-1/2 culleradeta de comí
-1/2 culleradeta de pebre negre
-1 culleradeta i quart de sal
-Un polsim de caiena (opcional)
+- 500g de vedella picada
+- 225g d'arròs blanc de gra llarg
+- 1 ceba
+- 1 pebrot vermell
+- 2 grans d'all
+- 2 cullerades d'oli d'oliva
+- 2 cullerades i mitja de tomàquet concentrat
+- 500ml de brou de vedella
+- 300g de verdures congelades (pèsols, pastanaga i blat de moro)
+- 90g d'espinacs tendres
+- 1 fulla de llorer
+- 1 culleradeta d'orenga seca
+- 1 culleradeta de ceba en pols
+- 1/2 culleradeta de comí
+- 1/2 culleradeta de pebre negre
+- 1 culleradeta i quart de sal
+- Un polsim de caiena (opcional)
 
 ## Elaboració
 Picar la ceba i el pebrot a daus petits, i l'all ben fi. Escalfar l'oli dins una cassola gran i sofregir la ceba, el pebrot i l'all durant un minut.

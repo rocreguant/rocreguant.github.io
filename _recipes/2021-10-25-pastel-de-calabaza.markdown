@@ -5,7 +5,7 @@ categories:
   - "general"
 ---
 
-**Ingredientes:**
+## Ingredientes:
 
 - 1 calabaza (450gr de pure de calabaza)
 - 250gr de harina
@@ -19,6 +19,6 @@ categories:
 - 250gr de azúcar
 - 1 cucharadita de extracto de vainilla
 
-**Preparación:**
+## Preparación:
 
-Calentar el horno a 180 C. Poner la calabaza 30-40min hasta que esté blanda. Cuando este blanda sacar, dejar enfriar unos minutos y triturar. Mezclar todo. Untar un molde con aceite y poner la masa. Meter en el horno 30min (puede que tarde mas dependiendo del agua que tuviera la calabaza.
+Calentar el horno a 180 C. Poner la calabaza 30-40min hasta que esté blanda. Cuando este blanda sacar, dejar enfriar unos minutos y triturar. Mezclar todo. Untar un molde con aceite y poner la masa. Meter en el horno 30min. Puede que tarde mas dependiendo del agua que tuviera la calabaza.

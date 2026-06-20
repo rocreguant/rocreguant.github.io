@@ -5,7 +5,7 @@ categories:
   - "general"
 ---
 
-**Ingredientes:**
+# Ingredientes:
 
 - Bacalao
 - Coliflor
@@ -13,6 +13,6 @@ categories:
 - Aceite
 - Oregano
 
-**Preparación****:**
+## Preparación:
 
 Cortamos todo menos los filetes de bacalao y lo ponemos en una bandeja. Le ponemos aceite, sal, y las especies (oregano). Calentamos el horno a 230C y lo metemos dentro. La coliflor es lo que tarda mas, por lo menos son 30minutos.
