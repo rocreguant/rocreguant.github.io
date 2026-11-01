@@ -9,7 +9,7 @@ sidebar:
 
   # Profile information
   name: Roc Reguant
-  tagline: RWE scientist
+  tagline: RWE Scientist Lead
   avatar: roc.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
@@ -48,10 +48,10 @@ sidebar:
       level: Native
 
     - idiom: German
-      level: Conversational
+      level: Conversational (B2)
 
     - idiom: French
-      level: Conversational
+      level: Intermediate (B1)
 
   interests:
 #    title: Interests
@@ -63,7 +63,7 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    Accomplished analytics leader with 9+ years of experience in pharmaceutical and biotechnology sectors with proven track record in leading complex analytical teams and projects, integrating AI, and delivering high-impact evidence to cross-functional stakeholders. Architect of the analytics portfolio for metabolic and neurology therapeutic areas through the integrated evidence generation plans, study inception and design, and global support to the local teams for regulatory and reimbursement submissions. Committed to fostering a culture of continuous innovation and excellence to transform the healthcare landscape and improve patient lives globally.
+    Accomplished biopharmaceutical leader with 10+ years of experience across Medical Affairs, real-world evidence (RWE), and advanced analytics. Proven track record in leading cross-functional teams, driving global medical strategies, and managing integrated evidence generation plans for complex therapeutic areas, including dermatology (Hidradenitis Suppurativa), metabolic, oncology, and neurology. Expert in collaborating with global/country affiliates, external medical experts, and KOLs to translate scientific insights into actionable medical strategies, HTA/reimbursement submissions, and product launch readiness.
 
 education:
   title: Education
@@ -93,21 +93,21 @@ education:
 experiences:
   title: Experiences
   info:
-    - role: Senior Real-World Data Scientist in Global Analytics Team
+    - role: RWE Scientist Lead – Global Analytics & Medical Strategy
       time: 2024 - Present
       company: AstraZeneca, Barcelona, Spain
       details: |
-        - Lead the conceptualization and design of research analytical projects in close collaboration with Medical, Market Access, and HEOR to understand the disease and patient journey, prepare product launches, and maximize the value of the products on the market.
-        - Manage external vendor/CRO partnerships and project timelines to ensure high-quality deliveries.
-        - Analysis of healthcare data, claims and EHR, to identify treatment patterns and clinical benefits across therapies.
-        - Reanalyze clinical trial datasets to investigate quality of life fluctuations, and subgroup analysis for several HTAs.
-        - Identification of underdiagnosed patient populations and quantifying market opportunities.
-        - Develop patient stratification models based on preceding comorbidities and longitudinal disease patterns to improve clinical phenotype prediction and population segmentation.
+        - Co-lead global medical strategy and evidence generation plans in close collaboration with Medical Affairs, Market Access, HEOR, and country affiliates to address key evidence gaps, optimize patient journey mapping, and accelerate launch readiness.
+        - Engage proactively with key opinion leaders (KOLs) and external medical experts to align research initiatives with global medical needs, presenting real-world evidence at major scientific conferences and advisory boards.
+        - Serve as the strategic partner for cross-functional Global Brand Teams, delivering data-driven medical insights to shape global brand tactics, value dossiers, and HTA/reimbursement strategy across priority assets.
+        - Drive local medical affairs and affiliate excellence by providing strategic guidance, standardizing analytics frameworks, and upskilling regional teams to ensure consistent execution of global medical priorities.
+        - Lead high-impact real-world data (RWD) projects using EHR and claims data to identify treatment patterns, unmet clinical needs, and underdiagnosed patient populations.
+        - Manage multi-million Ex-US data acquisition strategies and external CRO partnerships, ensuring high-quality, on-time delivery of strategic scientific deliverables.
     - role: Machine Learning Solutions Architect
       time: 2022 - 2024
       company: CSIRO, Sydney, Australia
       details: |
-        - Directed technical team members and led the end-to-end development of proteomics analysis platforms, focusing on automated feature extraction and synergy detection to advance precision medicine initiatives.
+        - Directed junior team members and led the end-to-end development of proteomics analysis platforms, focusing on automated feature extraction and synergy detection to advance precision medicine initiatives.
         - Architected VariantSpark, a cloud-based distributed ML tool for analyzing complex epistatic interactions; successfully developed polygenic risk scores for Cardiovascular (CV) risk, translating genomic complexity into actionable clinical predictors.
         - Lead a multi-modal data generation project to create high-fidelity synthetic datasets encompassing genetics, biochemistry, imaging (2D/3D), and clinical text.
         - Got granted a patent and lead the commercialization strategy for federated data generation.
@@ -115,10 +115,10 @@ experiences:
       time: 2018 - 2021
       company: Novo Nordisk Foundation Center for Protein Research, Copenhagen, Denmark
       details: |
-        - Led the developed of Deep Learning (CNN) models for the automated grading of diabetic retinopathy, significantly improving lesion identification in large-scale biomedical imaging datasets.
-        - Performed longitudinal patient journey mapping using large-scale EHR/EMR registries to stratify populations and differentiate complex disease states like Alzheimer’s vs. vascular dementia.
-        - Executed advanced time-to-event mortality analyses across Danish national databases, identifying causal drivers.
-        - Authored technical reports and collaborated on research initiatives that translated complex temporal data into actionable clinical insights.
+        - Led epidemiology and real-world evidence (RWE) initiatives in Medical Dermatology, focusing on Hidradenitis Suppurativa (HS) and chronic inflammatory conditions to quantify disease burden, patient trajectories, and unmet clinical needs.
+        - Architected Deep Learning (CNN) models for automated grading of diabetic retinopathy in large-scale biomedical datasets.
+        - Executed longitudinal patient journey mapping and time-to-event mortality analyses using nationwide Danish health registries to stratify complex disease cohorts.
+        - Authored scientific publications and technical reports in close collaboration with international clinical experts and key opinion leaders (KOLs) to inform clinical research and medical strategy.
     - role: Research fellow 
       time: 2016 - 2017
       company: Dana-Farber Cancer Institute, Boston, USA
@@ -178,6 +178,16 @@ publications:
     This is a selection of my publications, for a more detailed list you can visit <a href="https://scholar.google.es/citations?hl=en&user=9PL0JWgAAAAJ">my google scholar profile</a>.
 
   papers:
+  - title: Disease trajectories for hidradenitis suppurativa in the Danish population
+    link: 
+    authors: Kjærsgaard Andersen, R., Jørgensen, I. F., <b>Reguant, R.</b>, Jemec, G. B. E., & Brunak, S.
+    conference: JAMA dermatology, 2020
+
+  - title: The temporal association of hyperhidrosis and its comorbidities – a nationwide hospital-based cohort study
+    link: 
+    authors: Henning, M. A. S., <b>Reguant, R.</b>, Jørgensen, I. F., Andersen, R. K., Ibler, K. S., Pedersen, O. B., ... & Brunak, S.
+    conference: Journal of the European Academy of Dermatology and Venereology, 2022
+
   - title: Optimizing UK biobank cloud-based research analysis platform to fine-map coronary artery disease loci in whole genome sequencing data.
     link: 
     authors: Sng, L. M., Kaphle, A., O’Brien, M. J., Hosking, B., <b>Reguant, R.</b>, Verjans, J., ... & Bauer, D. C.
