@@ -28,7 +28,7 @@
   </nav>
   <main class="container mediumish-page">
     <article class="recipe-post">
-      {% if page.image %}
+      {% if page.image and page.hide_cover != true %}
       <img class="post-cover" src="{{ page.image }}" alt="{{ page.title }}">
       {% endif %}
       <h1>{{ page.title }}</h1>
