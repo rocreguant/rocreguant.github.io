@@ -98,7 +98,7 @@ experiences:
       company: AstraZeneca, Barcelona, Spain
       details: |
         - Co-lead global medical strategy and evidence generation plans in close collaboration with Medical Affairs, Market Access, HEOR, and country affiliates to address key evidence gaps, optimize patient journey mapping, and accelerate launch readiness.
-        - Engage proactively with key opinion leaders (KOLs) and external medical experts to align research initiatives with global medical needs, presenting real-world evidence at major scientific conferences and advisory boards.
+        - Engage proactively with key opinion leaders (KOLs) and external medical experts to align research initiatives with global medical needs, presenting real-world evidence at major scientific conferences.
         - Serve as the strategic partner for cross-functional Global Brand Teams, delivering data-driven medical insights to shape global brand tactics, value dossiers, and HTA/reimbursement strategy across priority assets.
         - Drive local medical affairs and affiliate excellence by providing strategic guidance, standardizing analytics frameworks, and upskilling regional teams to ensure consistent execution of global medical priorities.
         - Lead high-impact real-world data (RWD) projects using EHR and claims data to identify treatment patterns, unmet clinical needs, and underdiagnosed patient populations.
@@ -115,10 +115,10 @@ experiences:
       time: 2018 - 2021
       company: Novo Nordisk Foundation Center for Protein Research, Copenhagen, Denmark
       details: |
-        - Led epidemiology and real-world evidence (RWE) initiatives in Medical Dermatology, focusing on Hidradenitis Suppurativa (HS) and chronic inflammatory conditions to quantify disease burden, patient trajectories, and unmet clinical needs.
-        - Architected Deep Learning (CNN) models for automated grading of diabetic retinopathy in large-scale biomedical datasets.
-        - Executed longitudinal patient journey mapping and time-to-event mortality analyses using nationwide Danish health registries to stratify complex disease cohorts.
-        - Authored scientific publications and technical reports in close collaboration with international clinical experts and key opinion leaders (KOLs) to inform clinical research and medical strategy.
+        - Led the developed of Deep Learning (CNN) models for the automated grading of diabetic retinopathy, significantly improving lesion identification in large-scale biomedical imaging datasets.
+        - Performed longitudinal patient journey mapping using large-scale EHR/EMR registries to stratify populations and differentiate complex disease states like Alzheimer’s vs. vascular dementia.
+        - Executed advanced time-to-event mortality analyses across Danish national databases, identifying causal drivers.
+        - Authored technical reports and collaborated on research initiatives that translated complex temporal data into actionable clinical insights.
     - role: Research fellow 
       time: 2016 - 2017
       company: Dana-Farber Cancer Institute, Boston, USA
